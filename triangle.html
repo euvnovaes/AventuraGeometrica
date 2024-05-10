@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Aventura Geométrica - Triângulo</title>
+
+    
+    <style>
+
+        body {
+            background-image: url("Assets/images/fundo2.jpeg");
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: top; /* Mantém a imagem fixa enquanto a página rola */
+            background-size: cover; /* Faz a imagem cobrir todo o elemento */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <header class="w3-container green w3-center">
+        <h1>Forma Proibida: Triângulo</h1>
+        <a href="index.html"><h2>Aventura Geométrica</h2></a>
+    </header>
+
+    <br><br><br><br>
+
+    <main class="w3-container cards">
+        <div class="w3-card green forma">
+
+            <i class="bi bi-triangle"></i>
+
+            <br>
+
+            <iframe width="590" height="345" src="https://www.youtube.com/embed/ZyVxty7WJnQ?si=Dy4Fpmh2_KzasmRt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <br> <br>
+
+            <p style="font-size: 35px;"><strong>Vamos calcular a área do triângulo</strong></p>
+
+            <p>Digite a base do triângulo:</p>
+            <input type="number" id="basetri">
+
+            <br> <br>
+
+            <p>Digite a altura do triângulo:</p>
+            <input type="number" id="alturatri">
+
+            <br> <br>
+
+            <button id="btntri" class="w3-btn w3-deep-purple" >Calcular</button>
+
+            <br> <br>
+
+            <p id="resulttri"></p>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        
+        function calculartri() {
+            
+            const base = parseFloat(document.getElementById("basetri").value);
+            const altura = parseFloat(document.getElementById("alturatri").value);
+
+            
+            if (isNaN(base) || isNaN(altura) || base < 0 || altura < 0) {
+            alert("Por favor, insira valores válidos para a base e a altura.");
+            return;
+            }
+
+            const areatri = (base * altura) / 2;
+
+            const resulttri = document.getElementById("resulttri");
+
+            resulttri.textContent = "A área do triângulo é: " + areatri.toFixed(2);
+        }
+
+        
+        document.getElementById("btntri").addEventListener("click", calculartri);
+
+    </script>
+
+</body>
+
+</html>

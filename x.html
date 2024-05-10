@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Aventura Geométrica - Extras</title>
+
+    
+    <style>
+
+        body {
+            background-image: url("Assets/images/fundo2.jpeg");
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center; /* Mantém a imagem fixa enquanto a página rola */
+            background-size: cover; /* Faz a imagem cobrir todo o elemento */
+        }
+
+    </style>
+ 
+</head>
+
+<body>
+    
+    <header class="w3-container blue w3-center">
+            <h1>Formas Proíbidas: Extras</h1>
+            <a href="index.html"><h2>Aventura Geométrica</h2></a>
+    </header>
+
+    <br><br><br><br><br>
+
+    <main class="w3-container cards">
+        
+        
+            <div class="w3-card w3-blue forma">
+            
+                <img src="Assets/images/cubo.png" alt="Cubo" class="formimg">
+                <p>Vamos calcular a área do cubo!</p>
+                <br>
+                <p>Digite o valor do lado (aresta) do cubo:</p>
+                <br>
+                <input type="number" id="ladocubo">
+                <br>
+                <button id="bcubo" class="w3-btn w3-black">Calcular</button>
+                <br>
+                <p id="rescubo"></p>
+            
+            </div>
+
+            
+
+            <div class="w3-card w3-red forma">
+
+                <img src="Assets/images/cuboide.png" alt="Cubóide" class="formimg">
+                <p>Vamos calcular a área do cubóide!</p>
+                <br>
+                <p>Digite o valor do comprimento:</p>
+                <br>
+                <input type="number" id="compcuboide">
+                <br>
+                <p>Digite o valor da largura:</p>
+                <br>
+                <input type="number" id="largcuboide">
+                <br>
+                <p>Digite o valor da altura:</p>
+                <br>
+                <input type="number" name="" id="altcuboide">
+                <br>
+                <button id="bcuboide" class="w3-btn w3-black">Calcular</button>
+                <br>
+                <p id="rescuboide"></p>
+
+            </div>
+
+            <div class="w3-card w3-yellow forma">
+
+                <img src="Assets/images/retangulo.png" alt="Retângulo" class="formimg">
+                <p>Vamos calcular a área do retângulo!</p>
+                <br>
+                <p>Digite o valor da base:</p>
+                <br>
+                <input type="number" name="" id="baseretangulo">
+                <br>
+                <p>Digite o valor da altura:</p>
+                <br>
+                <input type="number" name="" id="altretangulo">
+                <br>
+                <button id="bretangulo" class="w3-btn w3-black">Calcular</button>
+                <br>
+                <p id="resretangulo"></p>
+
+            </div>
+       
+        
+    </main>
+
+    <br><br>
+
+    <main class="w3-container cards">
+
+      
+            <div class="w3-card w3-green forma">
+
+                <img src="Assets/images/trapezio.png" alt="Trapézio" class="formimg">
+                <p>Vamos calcular a área do trapézio!</p>
+                <br>
+                <p>Digite o valor da base maior:</p>
+                <br>
+                <input type="number" name="" id="bmaiortrapezio">
+                <br>
+                <p>Digite o valor da base menor:</p>
+                <br>
+                <input type="number" name="" id="bmenortrapezio">
+                <br>
+                <p>Digite o valor da altura:</p>
+                <br>
+                <input type="number" name="" id="alttrapezio">
+                <br>
+                <button id="btrapezio" class="w3-black w3-btn">Calcular</button>
+                <br>
+                <p id="restrapezio"></p>
+
+            </div>
+  
+
+        
+            <div class="w3-card w3-purple forma">
+
+                <img src="Assets/images/romboedro.png" alt="Romboedro" class="formimg">
+                <p>Vamos calcular a área do romboedro!</p>
+                <br>
+                <p>Digite o valor da diagonal maior:</p>
+                <br>
+                <input type="number" id="dmaiorromboedro">
+                <br>
+                <p>Digite o valor da diagonal menor:</p>
+                <br>
+                <input type="number" name="" id="dmenorromboedro">
+                <br>
+                <button id="bromboedro" class="w3-black w3-btn">Calcular</button>
+                <br>
+                <p id="resromboedro"></p>
+
+            </div>
+       
+
+    </main>
+    
+    <br><br>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="Assets/js/script.js"></script>
+</body>
+
+</html>
